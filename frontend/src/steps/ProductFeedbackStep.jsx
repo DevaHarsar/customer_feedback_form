@@ -1,18 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { setField } from '../features/feedbackSlice';
-import {
-  TextField,
-  Grid,
-  Checkbox,
-  FormControlLabel,
-  FormGroup,
-  Typography,
-  Paper,
-  Divider,
-  Box,
-  Container
-} from '@mui/material';
+import {TextField,Grid,Checkbox,FormControlLabel,FormGroup,Typography,Paper,Divider,Box,Container} from '@mui/material';
 
 const productOptions = [
   'Shirt', 'Pants', 'Dress', 'Jacket', 'Shoes', 'Accessories'
