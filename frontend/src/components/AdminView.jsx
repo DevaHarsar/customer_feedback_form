@@ -36,11 +36,15 @@ const AdminView = () => {
       <Typography variant="h4" gutterBottom sx={{ textAlign: 'center', mb: 4 }}>
         All Feedbacks
       </Typography>
-      {error && (
-      <Typography variant="body1" color="error" sx={{ mb: 3, textAlign: 'center' }}>
-        {error}
-      </Typography>
-    )}
+         {error ? (
+        <Typography variant="body1" color="error" sx={{ mb: 3, textAlign: 'center' }}>
+          {error}
+        </Typography>
+      ) : feedbacks.length === 0 ? (
+        <Typography variant="body1" color="text.secondary" sx={{ mb: 3, textAlign: 'center' }}>
+          No feedback data available.
+        </Typography>
+      ) : null}
       <Grid container spacing={10}>
         {feedbacks.map(fb => (
           <Grid item xs={12} md={6} lg={4} key={fb.id}>
@@ -66,7 +70,7 @@ const AdminView = () => {
                   <b>Products:</b> {fb.products}
                 </Typography>
                 <Typography variant="body2" sx={{ mb: 1 }}>
-                  <b>Date:</b> {fb.purchase_date}
+                  <b>Date:</b> {fb.purchase_date.slice(0, 10)}
                 </Typography>
                 <Box sx={{ display: 'flex', alignItems: 'center', gap: 2, mb: 1 }}>
                   <Typography variant="body2"><b>Quality:</b></Typography>
