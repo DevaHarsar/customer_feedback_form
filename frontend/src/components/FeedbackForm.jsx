@@ -16,9 +16,9 @@ function validateStep(step, state) {
   if (step === 0) {
     if (!state.full_name) errors.full_name = 'Full name is required';
     if (!state.email) errors.email = 'Email is required';
-    else if (!/^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/.test(state.email)) errors.email = 'Invalid email';
+    else if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(state.email)) errors.email = 'Invalid email';
     if (!state.phone) errors.phone = 'Phone is required';
-    else if (!/^\d{10,}$/.test(state.phone)) errors.phone = 'Invalid phone number';
+    else if (!/^[6-9]\d{9}$/.test(state.phone)) errors.phone = 'Invalid phone number';
   }
   if (step === 1) {
     if (!state.products.length) errors.products = 'Select at least one product';

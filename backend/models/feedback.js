@@ -19,6 +19,7 @@ const createFeedback = async (feedback) => {
     ]
   );
   return result;
+
 };
 
 const getAllFeedbacks = async () => {

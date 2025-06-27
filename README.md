@@ -13,7 +13,6 @@ A full-stack web application for collecting and managing customer feedback for a
   - [Frontend Setup](#frontend-setup)
 - [Usage](#usage)
 - [Screenshots](#screenshots)
-- [License](#license)
 
 ---
 
