@@ -65,34 +65,34 @@ mysql2
 ## Project Structure
 ```
 customer_feedback_form/
-  backend/
-    db.js
-    models/
-      feedback.js
-    routes/
-      feedback.js
-    server.js
-    package.json
-  frontend/
-    src/
-      App.jsx
-      steps/
-        CustomerInfoStep.jsx
-        ProductFeedbackStep.jsx
-        RatingStep.jsx
-        SignatureStep.jsx
-        SuccessStep.jsx
-      features/
-        feedbackSlice.js
-      store/
-        index.js
-      main.jsx
-      index.css
-      App.css
-    public/
-    package.json
-    vite.config.js
-```
+├── backend/
+│   ├── db.js                 # Database connection
+│   ├── server.js             # Express server setup
+│   ├── models/
+│   │   └── feedback.js       # Database operations
+│   ├── routes/
+│   │   └── feedback.js       # API endpoints
+│   └── package.json
+├── frontend/
+│   ├── src/
+│   │   ├── App.jsx           # Main application component
+│   │   ├── main.jsx          # React entry point
+│   │   ├── features/
+│   │   │   └── feedbackSlice.js  # Redux slice
+│   │   ├── store/
+│   │   │   └── index.js      # Redux store
+│   │   ├── steps/
+│   │   │   ├── CustomerInfoStep.jsx
+│   │   │   ├── ProductFeedbackStep.jsx
+│   │   │   ├── RatingStep.jsx
+│   │   │   ├── SignatureStep.jsx
+│   │   │   └── SuccessStep.jsx
+│   │   ├── App.css
+│   │   └── index.css
+│   ├── public/
+│   ├── package.json
+│   └── vite.config.js
+└── README.md
 
 ---
 
