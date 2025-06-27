@@ -75,12 +75,16 @@ customer_feedback_form/
 │   └── package.json
 ├── frontend/
 │   ├── src/
-│   │   ├── App.jsx           # Main application component
+│   │   ├── App.jsx           # Main application contains Appbar
 │   │   ├── main.jsx          # React entry point
 │   │   ├── features/
 │   │   │   └── feedbackSlice.js  # Redux slice
 │   │   ├── store/
 │   │   │   └── index.js      # Redux store
+│   │   ├── components/
+│   │   │   ├── AdminView.jsx    # Admin View
+│   │   │   └── FeedbackForm.jsx # FeedBackForm
+│   │   |      
 │   │   ├── steps/
 │   │   │   ├── CustomerInfoStep.jsx
 │   │   │   ├── ProductFeedbackStep.jsx
@@ -92,7 +96,8 @@ customer_feedback_form/
 │   ├── public/
 │   ├── package.json
 │   └── vite.config.js
-└── README.md
+├── README.md
+└── WORKFLOW.md
 
 ---
 
