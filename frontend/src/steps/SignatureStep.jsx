@@ -110,7 +110,7 @@ export default function SignatureStep({ errors }) {
           </Typography>
         )}
         {signature && (
-          <Box sx={{ mt: 2, textAlign: 'center' }}>
+          <Box sx={{mt: 2, textAlign: 'center' }}>
             <Typography variant="body2" sx={{ mb: 1, color: '#232526' }}>Signature Preview:</Typography>
             <img
               src={signature}
